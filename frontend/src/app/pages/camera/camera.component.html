@@ -1,7 +1,14 @@
-<h1>{{camera.model | uppercase}}</h1>
 <div class="row">
+    <h1>{{camera.model | uppercase}}</h1>
+    <div class="row row-cols-6 row-centered">
+        <img [src]="camera.photo_url" [alt]="camera.model" height="250" width="250">
+    </div>
+    
     <div class="col-md4">
-        <h3>{{camera.vendor}}</h3>
+        <label for="vendor">Vendor: </label>
+        <h3 id="vendor">{{camera.vendor}}</h3>
+        <label for="vendor">Vendor: </label>
+        <h3 id="vendor">{{camera.model}}</h3>
         <br>
         <a [routerLink]="['/cameras']" class="btn btn-outline-danger btn-block">Go back</a>
     </div>

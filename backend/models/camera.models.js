@@ -5,7 +5,8 @@ const CameraSchema = new Schema({
     model:{type:String},
     vendor:{type:String},
     has_flash:{type:Boolean},
-    film_id:[{type:String}]
+    film_id:[{type:String}],
+    photo_url:{type:String}
 },{
     timestamps:{createdAt:true,updatedAt:true}
 });

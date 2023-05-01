@@ -3,7 +3,8 @@ const {Schema} = mongoose;
 
 const CustomerSchema = new Schema({
     full_name:{type:String},
-    nuip:{type:String}
+    nuip:{type:String},
+    photo_user:{type:String}
 },{
     timestamps:{createdAt:true,updatedAt:true}
 });

@@ -15,6 +15,7 @@ export class CameraComponent implements OnInit{
     vendor: '',
     has_flash: false,
     film_id:[''],
+    photo_url:'',
     createdAt:null,
     updatedAt:null
   }
