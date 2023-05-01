@@ -14,5 +14,7 @@ Se debe realizar clonación de repositorio y para su ejecución se debe usar el 
 
 ## Frontend
 Proyecto ejecutado en Angular para la visualización de cámaras fotográficas y clientes.
+como el proyecto es de prueba para inicialización del proyecto en angular se debe hacer con el siguiente comando:
+- ng serve
 
 Proyecto realizado en Abril-Mayo 2023
