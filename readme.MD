@@ -4,7 +4,7 @@ Esta prueba consiste en el desarrollo de una aplicación de alquiler de cámaras
 
 ## Backend
 Sistema de API REST desarrollado en NodeJs donde se realiza endpoints para agregar, eliminar camaras fotográficas, peliculas y clientes. Almacenamiento persistente de de datos en MongoDB Atlas
-- Requisitos:
+Requisitos:
 - NodeJs V15.16.1
 - Express JS
 - Mongoose
@@ -14,6 +14,8 @@ Se debe realizar clonación de repositorio y para su ejecución se debe usar el 
 
 ## Frontend
 Proyecto ejecutado en Angular para la visualización de cámaras fotográficas y clientes.
+Requisitos:
+- Angular CLI
 como el proyecto es de prueba para inicialización del proyecto en angular se debe hacer con el siguiente comando:
 - ng serve
 
