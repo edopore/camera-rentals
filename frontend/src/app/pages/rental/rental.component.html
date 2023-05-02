@@ -1,19 +1,14 @@
-<div class="row">
-    <h1>{{rental._id | uppercase}}</h1>
+<div class="row mx-auto text-center">
+    <h1>Rental ID: {{rental._id | uppercase}}</h1>
     <div class="row row-cols-6 row-centered">
     </div>
-    <div class="container container-fluid">
-        <div class="row-cols-3">
-            <label for="vendor">Rental ID: </label>
-            <h3 id="vendor">{{rental._id}}</h3>
-            <label for="vendor">Rental Camera Model: </label>
-            <h3 id="vendor">{{camera.vendor}} | {{camera.model}}</h3>   
+    <div class="card mx-auto" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Rental ID: {{rental._id}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Rental Camera Model: <h5>{{camera.vendor}} | {{camera.model}}</h5></h6>
+          <p class="card-text">Rental Customer Name:</p><h5>{{customer.full_name}}</h5>
+          <a [routerLink]="['/home']" class="btn btn-outline-danger btn-block">Go back</a>
         </div>
-        <div class="row-cols-3">
-            <label for="vendor">Rental Customer ID: </label>
-            <h3 id="vendor">{{customer.full_name}}</h3>   
-        </div>
-        <br>
-        <a [routerLink]="['/home']" class="btn btn-outline-danger btn-block">Go back</a>
-    </div>
+      </div>
 </div>
+

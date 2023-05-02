@@ -1,3 +1,5 @@
 <h1>Rentals backend and Frontend</h1>
 <hr>
-<app-rental-card [Rental]="rental" *ngFor="let rental of Rentals"></app-rental-card>
+<div class="container text-center row row-cols-4 g-12 mx-auto">
+    <app-rental-card [Rental]="rental" *ngFor="let rental of Rentals"></app-rental-card>
+</div>

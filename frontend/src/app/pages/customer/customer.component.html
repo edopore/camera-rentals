@@ -1,11 +1,11 @@
-<div class="row">
+<div class="row text-center mx-auto">
     <h1>{{customer.full_name | uppercase}}</h1>
-    <div class="row row-cols-6 row-centered">
+    <div class="container text-center">
         <img [src]="customer.photo_user" [alt]="customer.full_name" height="250" width="250">
     </div>
     
     <div class="container container-fluid">
-        <div class="row-cols-3">
+        <div class="container container-fluid text-center">
             <label for="vendor">Customer NUIP: </label>
             <h3 id="vendor">{{customer.nuip}}</h3>   
         </div>

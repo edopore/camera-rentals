@@ -21,7 +21,7 @@ export class CameraComponent implements OnInit{
     updatedAt:null
   }
 
-  public film:Film = {
+  public film:Film[] = [{
     _id: '',
     model:'',
     vendor:'',
@@ -29,7 +29,7 @@ export class CameraComponent implements OnInit{
     format_film:'',
     createdAt:null,
     updatedAt:null
-  }
+  }]
 
   constructor(private _activatedRoute: ActivatedRoute, private _httpService:HttpService){}
 
@@ -41,11 +41,10 @@ export class CameraComponent implements OnInit{
           let listFilms = [];
           for(let i=0;i<this.camera.film_id.length;i++){
             this._httpService.getFilm(this.camera.film_id[i]).subscribe((film:Film)=>{
-              this.film = film['data'];
-              listFilms.push(this.film)
-              console.log(this.film)
+              listFilms.push(film['data'])
             })            
           }
+          this.film = listFilms;
         })
       })
   }
