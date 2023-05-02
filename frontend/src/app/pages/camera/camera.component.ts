@@ -26,7 +26,6 @@ export class CameraComponent implements OnInit{
         const id:string = params['id'];
         this._httpService.getCamera(id).subscribe((camera:Camera) => {
           this.camera = camera['data'];
-          console.log(this.camera);
         })
       })
   }

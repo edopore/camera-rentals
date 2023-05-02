@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" [src]="Customer.photo_user" [alt]="Customer.full_name" height="250" width="250">
+    <div class="card-body">
+      <h5 class="card-title">{{Customer.full_name}}</h5>
+      <p class="card-text">{{Customer.nuip}}</p>
+      <a [routerLink]="['/customer',Customer._id]" class="btn btn-primary">See more...</a>
+    </div>
+</div>

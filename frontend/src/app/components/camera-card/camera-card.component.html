@@ -1,8 +1,8 @@
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" [src]="Camera.photo_url" [alt]="Camera.model" height="250" width="250">
-        <div class="card-body">
-          <h5 class="card-title">{{Camera.model}}</h5>
-          <p class="card-text">{{Camera.vendor}}</p>
-          <a [routerLink]="['/camera',Camera._id]" class="btn btn-primary">See more...</a>
-        </div>
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" [src]="Camera.photo_url" [alt]="Camera.model" height="250" width="250">
+    <div class="card-body">
+      <h5 class="card-title">{{Camera.model}}</h5>
+      <p class="card-text">{{Camera.vendor}}</p>
+      <a [routerLink]="['/camera',Camera._id]" class="btn btn-primary">See more...</a>
     </div>
+</div>

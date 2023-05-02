@@ -1,0 +1,18 @@
+<div class="row">
+    <h1>{{rental._id | uppercase}}</h1>
+    <div class="row row-cols-6 row-centered">
+    </div>
+    
+    <div class="container container-fluid">
+        <div class="row-cols-3">
+            <label for="vendor">Rental Customer: </label>
+            <h3 id="vendor">{{rental.camera_id}}</h3>   
+        </div>
+        <div class="row-cols-3">
+            <label for="vendor">Rental Camera: </label>
+            <h3 id="vendor">{{rental.customer_id}}</h3>   
+        </div>
+        <br>
+        <a [routerLink]="['/home']" class="btn btn-outline-danger btn-block">Go back</a>
+    </div>
+</div>

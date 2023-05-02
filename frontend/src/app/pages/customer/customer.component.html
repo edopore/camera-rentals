@@ -1,0 +1,16 @@
+<div class="row">
+    <h1>{{customer.full_name | uppercase}}</h1>
+    <div class="row row-cols-6 row-centered">
+        <img [src]="customer.photo_user" [alt]="customer.full_name" height="250" width="250">
+    </div>
+    
+    <div class="container container-fluid">
+        <div class="row-cols-3">
+            <label for="vendor">Customer NUIP: </label>
+            <h3 id="vendor">{{customer.nuip}}</h3>   
+        </div>
+        <br>
+        <a [routerLink]="['/customers']" class="btn btn-outline-danger btn-block">Go back</a>
+    </div>
+</div>
+
