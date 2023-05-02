@@ -4,6 +4,7 @@ import { Camera } from '../models/camera.model';
 import { environment } from '../../environments/environment.development' 
 import { Customer } from '../models/customer.model';
 import { Rental } from '../models/rental.model';
+import { Film } from '../models/film.model';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +20,9 @@ export class HttpService {
   public getCamera(id:string){
     return this._http.get<Camera>(this.baseUrl+"/cameras/"+id);
   }
-
+  public getFilm(id:string){
+    return this._http.get<Film>(this.baseUrl+'/films/'+id)
+  }
   public getCustomers(){
     return this._http.get<Customer[]>(this.baseUrl+'/customers');
   }
